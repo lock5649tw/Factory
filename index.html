@@ -449,8 +449,15 @@ body {
 </head>
 <body>
 
-<div id="panorama"></div>
+<div id="panorama">
+    <div id="load_button" onclick="load()"><p>點擊畫面後<br>載入<br>全景照片</p><p></p></div>
+    </div>
 <script>
+pannellum.viewer('panorama', {
+    "type": "equirectangular",
+    "panorama": "https://i.imgur.com/exVund6.jpg",
+    "preview": "https://i.imgur.com/M8hJzTA.jpg"
+});
 pannellum.viewer('panorama', {
     "type": "equirectangular",
     "panorama": "https://i.imgur.com/exVund6.jpg",

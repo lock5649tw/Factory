@@ -17,13 +17,13 @@
 
 <body>
 	<select id="select" onchange="myselect()">
-		<option value="../src/models/Geometry.glb">Geometry</option>
-		<option value="../src/models/Golden Ratio.glb">Golden Ratio</option>
-		<option value="../src/models/Symmetry.glb">Symmetry</option>
+		<option value="src/models/Geometry.glb">Geometry</option>
+		<option value="/src/models/Golden Ratio.glb">Golden Ratio</option>
+		<option value="./src/models/Symmetry.glb">Symmetry</option>
 		<option value="../src/models/Hive.glb">Hive</option>
     </select>
 	<p id="demo"></p>
-	<model-viewer id="toggle-model" src="https://github.com/lock5649tw/Factory/blob/master/src/models/Geometry.glb" alt="A demo of model viewer." auto-rotate camera-controls shadow-intensity="1" ></model-viewer>
+	<model-viewer id="toggle-model" src="src/models/Geometry.glb" alt="A demo of model viewer." auto-rotate camera-controls shadow-intensity="1" ></model-viewer>
 	
 	<script>
 	function myselect(){
